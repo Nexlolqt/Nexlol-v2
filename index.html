@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXLOL Unternehmensberatung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-gray': '#111827',
+                        'light-gray': '#e5e7eb',
+                        'medium-gray': '#6b7280',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        ::selection {
+            background: rgba(17, 24, 39, 0.1);
+        }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: white;
+            z-index: 100;
+            overflow-y: auto;
+        }
+        .modal-overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-deep-gray antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b border-light-gray z-50">
+        <div class="w-full px-8 lg:px-16 xl:px-24">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center gap-3">
+                    <span class="font-medium text-base tracking-tight">NEXLOL</span>
+                    <span class="text-light-gray">|</span>
+                    <span class="text-sm text-medium-gray">Unternehmensberatung</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-12">
+                    <a href="#auftrag" class="text-sm text-medium-gray hover:text-deep-gray transition-colors">Auftrag</a>
+                    <a href="#prozess" class="text-sm text-medium-gray hover:text-deep-gray transition-colors">Prozess</a>
+                    <a href="#expertise" class="text-sm text-medium-gray hover:text-deep-gray transition-colors">Expertise</a>
+                    <a href="#kontakt" class="text-sm text-medium-gray hover:text-deep-gray transition-colors">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-24 lg:py-32">
+            <div class="max-w-4xl">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-medium leading-snug tracking-tight mb-8">
+                    Projektsteuerung & Beratung.<br>
+                    Präzision im Schadensfall.
+                </h1>
+                <p class="text-lg text-medium-gray max-w-2xl leading-relaxed mb-12">
+                    Strukturierte Planung und neutrale Koordination von Versicherungsschäden. Fachliche Expertise für effiziente Prozesse.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#kontakt" class="inline-flex items-center gap-2 text-sm text-deep-gray hover:text-medium-gray transition-colors group">
+                        Beratung anfordern
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    <a href="#expertise" class="inline-flex items-center gap-2 text-sm text-medium-gray hover:text-deep-gray transition-colors group">
+                        Leistungsportfolio
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 01 / Auftrag -->
+    <section id="auftrag" class="border-t border-light-gray">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-24 lg:py-32">
+            <div class="grid lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-4">
+                    <span class="text-sm text-medium-gray mb-4 block">01 / Auftrag</span>
+                </div>
+                <div class="lg:col-span-8">
+                    <p class="text-xl lg:text-2xl leading-relaxed mb-12 max-w-3xl">
+                        Wir transformieren komplexe Schadenslagen in geordnete Abläufe. Unser Fokus liegt auf technischer Exzellenz und objektiver Bewertung. Als neutrale Schnittstelle zwischen Versicherer und Geschädigtem gewährleisten wir transparente Prozesse und lückenlose Dokumentation.
+                    </p>
+                    <p class="text-sm text-medium-gray">
+                        Inhaber: Miko Harrmann, Kaufmann für Versicherungen und Finanzen IHK
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 02 / Prozess -->
+    <section id="prozess" class="border-t border-light-gray bg-gray-50">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-24 lg:py-32">
+            <div class="mb-16">
+                <span class="text-sm text-medium-gray mb-4 block">02 / Prozess</span>
+                <h2 class="text-2xl lg:text-3xl font-medium">Der Sanierungsprozess</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-light-gray">
+                <div class="bg-gray-50 p-8 lg:p-10">
+                    <span class="text-3xl font-light text-medium-gray mb-6 block">01</span>
+                    <h3 class="text-lg font-medium mb-4">Analyse</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Umfassende Schadensaufnahme vor Ort. Erfassung aller relevanten Details. Erstellung einer fundierten Bestandsaufnahme.</p>
+                </div>
+                <div class="bg-gray-50 p-8 lg:p-10">
+                    <span class="text-3xl font-light text-medium-gray mb-6 block">02</span>
+                    <h3 class="text-lg font-medium mb-4">Planung</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Entwicklung eines Sanierungskonzepts. Detaillierter Zeitplan und Budgetplanung. Ressourcenallokation.</p>
+                </div>
+                <div class="bg-gray-50 p-8 lg:p-10">
+                    <span class="text-3xl font-light text-medium-gray mb-6 block">03</span>
+                    <h3 class="text-lg font-medium mb-4">Steuerung</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Koordination aller Beteiligten. Kontinuierliches Monitoring. Projektmanagement bis zur Fertigstellung.</p>
+                </div>
+                <div class="bg-gray-50 p-8 lg:p-10">
+                    <span class="text-3xl font-light text-medium-gray mb-6 block">04</span>
+                    <h3 class="text-lg font-medium mb-4">Abschluss</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Qualitätskontrolle und Dokumentation. Übergabe nach Erfüllung aller Anforderungen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 03 / Expertise -->
+    <section id="expertise" class="border-t border-light-gray">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-24 lg:py-32">
+            <div class="mb-16">
+                <span class="text-sm text-medium-gray mb-4 block">03 / Expertise</span>
+                <h2 class="text-2xl lg:text-3xl font-medium mb-4">Leistungsportfolio</h2>
+                <p class="text-medium-gray">Vier Säulen der fachlichen Kompetenz.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-px bg-light-gray">
+                <div class="bg-white p-10 lg:p-12 hover:bg-gray-50 transition-colors">
+                    <h3 class="text-lg font-medium mb-4">Schadenanalyse</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Präzise Bewertung und Dokumentation von Versicherungsschäden. Vor-Ort-Begutachtung, Kostenschätzung und Gutachtenerstellung.</p>
+                </div>
+                <div class="bg-white p-10 lg:p-12 hover:bg-gray-50 transition-colors">
+                    <h3 class="text-lg font-medium mb-4">Projektsteuerung</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Koordination und Überwachung von Sanierungsprojekten. Zeitmanagement, Qualitätskontrolle und lückenloses Reporting.</p>
+                </div>
+                <div class="bg-white p-10 lg:p-12 hover:bg-gray-50 transition-colors">
+                    <h3 class="text-lg font-medium mb-4">Kostenmanagement</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Transparente Kostenkontrolle und Optimierung. Analyse aller Kostenfaktoren, Budgetplanung und Abrechnung.</p>
+                </div>
+                <div class="bg-white p-10 lg:p-12 hover:bg-gray-50 transition-colors">
+                    <h3 class="text-lg font-medium mb-4">Dokumentation</h3>
+                    <p class="text-sm text-medium-gray leading-relaxed">Lückenlose Dokumentation für die Schadensabwicklung. Fotodokumentation, Berichtswesen und Aktenverwaltung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 04 / Kontakt -->
+    <section id="kontakt" class="border-t border-light-gray bg-gray-50">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-24 lg:py-32">
+            <div class="grid lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-4">
+                    <span class="text-sm text-medium-gray mb-4 block">04 / Kontakt</span>
+                    <h2 class="text-2xl lg:text-3xl font-medium mb-6">Erstberatung</h2>
+                    <p class="text-sm text-medium-gray leading-relaxed">
+                        Kontaktieren Sie uns für eine unverbindliche Ersteinschätzung. Wir systematisieren Ihren Fall und erarbeiten eine objektive Vorgehensweise.
+                    </p>
+                </div>
+                <div class="lg:col-span-8">
+                    <div class="grid sm:grid-cols-2 gap-px bg-light-gray">
+                        <div class="bg-white p-8">
+                            <svg class="w-5 h-5 text-medium-gray mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <h3 class="text-xs text-medium-gray uppercase tracking-wide mb-2">E-Mail</h3>
+                            <a href="mailto:projekt@nexlol.de" class="text-deep-gray hover:text-medium-gray transition-colors">projekt@nexlol.de</a>
+                        </div>
+                        <div class="bg-white p-8">
+                            <svg class="w-5 h-5 text-medium-gray mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <h3 class="text-xs text-medium-gray uppercase tracking-wide mb-2">Anschrift</h3>
+                            <p class="text-deep-gray text-sm leading-relaxed">
+                                NEXLOL Unternehmensberatung<br>
+                                Hahnenkammstr. 25<br>
+                                63450 Hanau
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-light-gray">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-medium-gray">
+                    © 2026 NEXLOL Unternehmensberatung | www.nexlol.de
+                </p>
+                <div class="flex items-center gap-6">
+                    <button onclick="openModal('impressum')" class="text-xs text-medium-gray hover:text-deep-gray transition-colors">Impressum</button>
+                    <button onclick="openModal('datenschutz')" class="text-xs text-medium-gray hover:text-deep-gray transition-colors">Datenschutz</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Impressum Modal -->
+    <div id="impressum" class="modal-overlay">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-8">
+            <div class="flex justify-end mb-16">
+                <button onclick="closeModal('impressum')" class="flex items-center gap-2 text-sm text-medium-gray hover:text-deep-gray transition-colors">
+                    Schließen
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="max-w-2xl">
+                <h2 class="text-2xl font-medium mb-8">Impressum</h2>
+                <div class="space-y-4 text-medium-gray">
+                    <p>NEXLOL Unternehmensberatung</p>
+                    <p>Inhaber: Miko Harrmann<br>
+                    Kaufmann für Versicherungen und Finanzen IHK</p>
+                    <p>Hahnenkammstr. 25<br>
+                    63450 Hanau</p>
+                    <p>E-Mail: projekt@nexlol.de</p>
+                    <p class="text-sm pt-4">(Keine Versicherungsvermittlung, rein beratende und steuernde Tätigkeit.)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div id="datenschutz" class="modal-overlay">
+        <div class="w-full px-8 lg:px-16 xl:px-24 py-8">
+            <div class="flex justify-end mb-16">
+                <button onclick="closeModal('datenschutz')" class="flex items-center gap-2 text-sm text-medium-gray hover:text-deep-gray transition-colors">
+                    Schließen
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="max-w-2xl">
+                <h2 class="text-2xl font-medium mb-8">Datenschutz</h2>
+                <p class="text-medium-gray leading-relaxed">
+                    Hier folgt die Datenschutzerklärung nach DSGVO. Die vollständige Datenschutzerklärung wird in Kürze verfügbar sein.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(function(modal) {
+                    modal.classList.remove('active');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close modal when clicking outside content
+        document.querySelectorAll('.modal-overlay').forEach(function(modal) {
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
