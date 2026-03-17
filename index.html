@@ -258,23 +258,103 @@
 
     <!-- Datenschutz Modal -->
     <div id="datenschutz" class="modal-overlay">
-        <div class="w-full px-8 lg:px-16 xl:px-24 py-8">
-            <div class="flex justify-end mb-16">
-                <button onclick="closeModal('datenschutz')" class="flex items-center gap-2 text-sm text-medium-gray hover:text-deep-gray transition-colors">
-                    Schließen
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="max-w-2xl">
-                <h2 class="text-2xl font-medium mb-8">Datenschutz</h2>
-                <p class="text-medium-gray leading-relaxed">
-                    Hier folgt die Datenschutzerklärung nach DSGVO. Die vollständige Datenschutzerklärung wird in Kürze verfügbar sein.
-                </p>
+    <div class="w-full px-8 lg:px-16 xl:px-24 py-8 overflow-y-auto max-h-screen">
+        <div class="flex justify-end mb-16">
+            <button onclick="closeModal('datenschutz')" class="flex items-center gap-2 text-sm text-medium-gray hover:text-deep-gray transition-colors">
+                Schließen
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="max-w-2xl">
+            <h2 class="text-2xl font-medium mb-8">Datenschutzerklärung</h2>
+            
+            <div class="space-y-8 text-medium-gray leading-relaxed">
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">1. Grundsatz</h3>
+                    <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, BDSG, DDG).</p>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">2. Verantwortlicher</h3>
+                    <p>
+                        Miko Harrmann (Nexlol)<br>
+                        Hahnenkammstr. 25<br>
+                        63450 Hanau<br>
+                        E-Mail: <a href="mailto:Projekt@nexlol.de" class="underline">Projekt@nexlol.de</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">3. Datenerfassung auf unserer Website</h3>
+                    <p>Wir erheben Daten nur im notwendigen Umfang:</p>
+                    <ul class="list-disc ml-5 mt-2 space-y-1">
+                        <li><strong>Kontaktanfragen:</strong> Name, E-Mail und Nachricht zur Bearbeitung Ihres Anliegens (Art. 6 Abs. 1 lit. b DSGVO).</li>
+                        <li><strong>Server-Log-Files:</strong> IP-Adresse und Browsertyp werden technisch bedingt kurzzeitig gespeichert (berechtigtes Interesse).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">4. Drittanbieter</h3>
+                    <p>Zur Bereitstellung unserer Dienste nutzen wir:</p>
+                    <ul class="list-disc ml-5 mt-2 space-y-1">
+                        <li><strong>Formspree:</strong> Zur Verarbeitung von Kontaktformularen (USA, Standardvertragsklauseln).</li>
+                        <li><strong>Google Fonts:</strong> Zur korrekten Darstellung von Schriftarten.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">5. Ihre Rechte</h3>
+                    <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer Daten. Kontaktieren Sie uns dazu einfach unter der oben genannten E-Mail-Adresse.</p>
+                </section>
+
+                <p class="text-xs pt-8">Stand: März 2026</p>
             </div>
         </div>
     </div>
+</div>          <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, BDSG, DDG).</p>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">2. Verantwortlicher</h3>
+                    <p>
+                        Miko Harrmann (Nexlol)<br>
+                        Hahnenkammstr. 25<br>
+                        63450 Hanau<br>
+                        E-Mail: <a href="mailto:Projekt@nexlol.de" class="underline">Projekt@nexlol.de</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">3. Datenerfassung auf unserer Website</h3>
+                    <p>Wir erheben Daten nur im notwendigen Umfang:</p>
+                    <ul class="list-disc ml-5 mt-2 space-y-1">
+                        <li><strong>Kontaktanfragen:</strong> Name, E-Mail und Nachricht zur Bearbeitung Ihres Anliegens (Art. 6 Abs. 1 lit. b DSGVO).</li>
+                        <li><strong>Server-Log-Files:</strong> IP-Adresse und Browsertyp werden technisch bedingt kurzzeitig gespeichert (berechtigtes Interesse).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">4. Drittanbieter</h3>
+                    <p>Zur Bereitstellung unserer Dienste nutzen wir:</p>
+                    <ul class="list-disc ml-5 mt-2 space-y-1">
+                        <li><strong>Formspree:</strong> Zur Verarbeitung von Kontaktformularen (USA, Standardvertragsklauseln).</li>
+                        <li><strong>Google Fonts:</strong> Zur korrekten Darstellung von Schriftarten.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="text-deep-gray font-medium mb-2">5. Ihre Rechte</h3>
+                    <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer Daten. Kontaktieren Sie uns dazu einfach unter der oben genannten E-Mail-Adresse.</p>
+                </section>
+
+                <p class="text-xs pt-8">Stand: März 2026</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script>
         function openModal(id) {
